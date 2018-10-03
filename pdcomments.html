@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>
+        <div ng-app="pdComments" class="container_fluid" ng-cloak>
+            <div id="appTitle" class="blue">
+                <h2>PD BEST POSTS AND COMMENTS 2018</h2>
+            </div>
+            <div id="mainWrap">
+                <div ng-controller="commentsController">
+                    <div id="commentBoxWrapper" class="grey lighten-4">
+                        <div><span ng-click="copyToClipboard()"><i class="fa fa-copy"></i> copy</span></div>
+                        <div id="commentBox"><span class="grey-text text-darken-2" id="clipboard" ng-bind-html="comment | unsafe"></span></div>
+                    </div>
+                    
+                <div id="controlButtons">
+                    <div><button ng-disabled="index==0" ng-click="decreaseIndex()" class="btn-small blue"><i class="fa fa-arrow-alt-circle-left"></i> Prev</button></div>
+                    <div><input id="txtindex"  ng-keyup="changeComment()" type="text" size="1" ng-model="count"> <span>of {{comments.length}}</span></div>
+                    <div><button ng-disabled="count>=comments.length" ng-click="increaseIndex()" class="btn-small blue">Next <i class="fa fa-arrow-alt-circle-right"></i></button></div>
+                    <div><button ng-click="getRandomComment()" class="btn-small blue"><i class="fa fa-question-circle"></i> Random Pick</button></div>
+                </div> 
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.4/angular-sanitize.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

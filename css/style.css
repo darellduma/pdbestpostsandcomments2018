@@ -1,0 +1,55 @@
+::selection {
+    background: #FAFAFA;
+  }
+  ::-moz-selection {
+    background: #FAFAFA;
+  }
+
+#mainWrap{
+    margin: 20px;
+}
+
+#appTitle{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#commentBox{
+    height: 350px;
+    padding: 20px;
+    word-wrap: -2px;
+    overflow: auto;
+}
+
+#commentBox span{
+    top: 30%;
+    font-size: 16pt;
+}
+
+#commentBoxWrapper div:first-of-type{
+    float: right;
+    border-bottom: solid thin #ddd;
+    border-left: solid thin #ddd;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#controlButtons{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#txtindex{
+    text-align: center;
+    width: 50px !important;
+}
+
+#controlButtons div{
+    display: inline;
+}
+
+#controlButtons div:last-of-type{
+    float: right;
+    margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "pdcomments",
+  "version": "1.0.0",
+  "description": "The best of PD Posts and Comments of 2018",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darellduma/pdbestpostsandcomments2018.git"
+  },
+  "keywords": [
+    "pdposts2018",
+    "pdcomments2018",
+    "pdpostsandcomments2018"
+  ],
+  "author": "Darell Duma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darellduma/pdbestpostsandcomments2018/issues"
+  },
+  "homepage": "https://github.com/darellduma/pdbestpostsandcomments2018#readme"
+}
